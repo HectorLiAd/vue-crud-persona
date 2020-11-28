@@ -1,19 +1,31 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <h1>FORMULARIO PARA LA PERSONA</h1>
+    <div class="container-fluid">
+      <div class="col-md-12">
+        <div class="row">
+          <!-- <div class="col-md-2">
+            <MenuComponent></MenuComponent>
+          </div> -->
+          <div class="col-md-12 w-100">
+            <div class="jumbotron">
+              <router-view></router-view>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+// import MenuComponent from "./components/MenuComponent";
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    // MenuComponent,
+  },
+};
 </script>
 
 <style>
@@ -25,4 +37,5 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
 }
+@import "./assets/css/style.css";
 </style>
