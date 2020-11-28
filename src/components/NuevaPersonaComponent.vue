@@ -21,7 +21,7 @@
             type="text"
             class="form-control"
             id="nombrePersona"
-            placeholder="Nombres completos"
+            placeholder="Jose Juanito"
             v-model="persona.Nombre"
           />
         </div>
@@ -35,7 +35,7 @@
             type="text"
             class="form-control"
             id="apellidoPaterno"
-            placeholder="Apellido Paterno"
+            placeholder="Simoni"
             v-model="persona.Apellido_paterno"
           />
         </div>
@@ -49,7 +49,7 @@
             type="text"
             class="form-control"
             id="apellidoMaterno"
-            placeholder="Apellido Materno"
+            placeholder="Simoni"
             v-model="persona.Apellido_materno"
           />
         </div>
@@ -61,7 +61,7 @@
             type="text"
             class="form-control"
             id="apellidoMaterno"
-            placeholder="DNI"
+            placeholder="01010101"
             v-model="persona.Dni"
           />
         </div>
@@ -75,7 +75,7 @@
             type="text"
             class="form-control"
             id="apellidoMaterno"
-            placeholder="Fecha de Nacimiento"
+            placeholder="AAAA-MM-DD"
             v-model="persona.Fecha_nacimiento"
           />
         </div>
