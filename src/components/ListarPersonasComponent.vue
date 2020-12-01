@@ -102,7 +102,7 @@ export default {
     },
     eliminarPersona(cod) {
       axios
-        .delete("https://proyintegrador2020.herokuapp.com/persona/" + cod)
+        .delete("https://proyintegrador2020.herokuapp.com/v1/persona/" + cod)
         .then((response) => {
           if(response.data == 0){
             swal(
@@ -120,7 +120,7 @@ export default {
     obtenerPersonas() {
       axios
         .post(
-          "https://proyintegrador2020.herokuapp.com/persona/paginated",
+          "https://proyintegrador2020.herokuapp.com/v1/persona/paginated",
           `{
             "limit": ${this.limit},
             "offset": ${(this.offset)}
@@ -137,7 +137,7 @@ export default {
     iniciarTablaPersonas(){
       axios
         .post(
-          "https://proyintegrador2020.herokuapp.com/persona/paginated",
+          "https://proyintegrador2020.herokuapp.com/v1/persona/paginated",
           `{
             "limit": 0,
             "offset": 1

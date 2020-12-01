@@ -173,7 +173,7 @@ export default {
     },
     obtenerPersona() {
       axios
-        .get("https://proyintegrador2020.herokuapp.com/persona/" + this.id_persona_url)
+        .get("https://proyintegrador2020.herokuapp.com/v1/persona/" + this.id_persona_url)
         .then((response) => {
           this.persona.Nombre = response.data.nombre_personal;
           this.persona.Apellido_paterno = response.data.apellido_paterno;
@@ -220,7 +220,7 @@ export default {
     actualizarPersona() {
       axios
         .put(
-          "https://proyintegrador2020.herokuapp.com/persona/",
+          "https://proyintegrador2020.herokuapp.com/v1/persona/",
           `{
             "ID": ${this.id_persona_url},
             "Nombre": "${this.persona.Nombre}",
@@ -250,7 +250,7 @@ export default {
     crearPersona() {
       axios
         .post(
-          "https://proyintegrador2020.herokuapp.com/persona/",
+          "https://proyintegrador2020.herokuapp.com/v1/persona/",
           `{
         "Nombre": "${this.persona.Nombre}",
         "ApellidoPaterno": "${this.persona.Apellido_paterno}",
